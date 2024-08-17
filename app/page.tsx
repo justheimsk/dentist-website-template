@@ -1,3 +1,4 @@
+import { Card } from "@/components/common/Card";
 import { Container } from "@/components/layout/Container";
 import { Navbar } from "@/components/layout/Navbar";
 import { Section } from "@/components/layout/Section";
@@ -21,13 +22,21 @@ export default function Home() {
                 <span className="text-sm">Anos de experiencia!</span>
               </div>
             </div>
-            <div className="flex items-center mt-7 gap-3">
-              <span className="w-3 h-3 bg-green-600 rounded-full"></span>
-              <span className="text-sm font-bold">Primeira avaliação gratuita!</span>
-            </div>
           </div>
           <div className="w-1/2 flex justify-center">
             <Image src="/woman.png" width={300} height={300} alt="Woman" />
+          </div>
+        </Section>
+      </Container>
+      <Container>
+        <Section>
+          <div className="flex flex-col text-center w-full">
+            <h2 className="text-2xl font-bold">Os tratamentos mais realizados</h2>
+            <div className="flex mt-8 gap-5">
+              <Card label="Implantes dentários" description="Recupere a beleza e função" image="/implant.jpg" />
+              <Card bigger label="Aparelho ortodôntico" description="Dê um sorriso com dentes simetricos" image="/aparelho.jpg" />
+              <Card label="Limpeza dental" description="Deixe seus dentes brilhando" image="/wash.jpg" />
+            </div>
           </div>
         </Section>
       </Container>
