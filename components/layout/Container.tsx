@@ -5,7 +5,7 @@ export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
 export function Container(props: ContainerProps) {
   return (
     <>
-      <div {...props} className={`sm:px-[2%] md:px-[8%] ${props.className}`}>{props.children}</div>
+      <div {...props} className={`px-[6%] md:max-w-[1200px] md:mx-auto ${props.className}`}>{props.children}</div>
     </>
   )
 }
