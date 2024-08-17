@@ -68,7 +68,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-.section__ignore-navbar {
-  height: calc(100vh - 56px - 40px);
-}
