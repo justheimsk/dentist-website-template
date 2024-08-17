@@ -1,11 +1,11 @@
-export type ContainerProps = {
+export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
 }
 
 export function Container(props: ContainerProps) {
   return (
     <>
-      <div className="sm:px-[2%] md:px-[8%]">{props.children}</div>
+      <div {...props} className={`sm:px-[2%] md:px-[8%] ${props.className}`}>{props.children}</div>
     </>
   )
 }
